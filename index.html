@@ -1,16 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Мій сайт-візитівка</title>
+    <style>
+        body {
+            background-color: #8a8a5c;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            transition: background 0.5s ease;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #c4c49e;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: white;
+            color: #8a8a5c;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
+    <nav>
+        <a href="#about">Про мене</a>
+        <a href="#portfolio">Портфоліо</a>
+        <a href="#contact">Контакти</a>
+    </nav>
 
-    <h1>Hello, world!</h1>
-
+    <section id="about">Про мене</section>
+    <section id="portfolio">Портфоліо</section>
+    <section id="contact">Контакти</section>
 </body>
 
 </html>
